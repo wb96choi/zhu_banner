@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    font-family: 'Roboto Slab', serif;
+}
+
+#container {
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 960px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* main */
+/* main img part */
+.main .mainImg .Img {
+    width: 950px;
+    left: -30px;
+    position: absolute;    
+
+    animation-name: imgbox;
+    animation-duration: 2s;
+    animation-iteration-count: ease-in-out infinite;
+}
+
+.main .shadow {
+    width: 900px;
+    height: 250px;
+    top: 650px;
+    position: absolute;
+
+    animation-name: imgbox_shadow;
+    animation-duration: 7s;
+}
+@keyframes imgbox {
+    0% {
+        left: -700px;
+    }
+    100% {
+        left: -30px;
+    }
+}
+@keyframes imgbox_shadow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* main link part */
+.main .mainImg {
+    position: relative;
+}
+.main .mainImg > a img {
+    width: 25px;
+}
+.main .mainImg > a p {
+    float: right;
+    color: #1ed760;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.main .mainImg > a {
+    position: absolute;
+    top: 660px;
+    left: 350px;
+    display: block;
+    opacity: 0;
+
+    animation-name: link_btn;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes link_btn {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* title */
+.titlePart {
+    z-index: 1;
+    position: absolute;
+    left: 1100px;
+    top: 50px;
+}
+/* main title */
+.titlePart .main_title {
+    text-transform: uppercase;
+    font-size: 5.5em;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 5px #fff, 13px 10px 5px #DA831F;
+    opacity: 0;
+
+    animation-name: mainTitle;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mainTitle {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* sub title */
+.titlePart .sub_title {
+    font-size: 2em;
+    text-align: right;
+    position: absolute;
+    bottom: -690px;
+    left: -390px;
+    opacity: 0;
+
+    animation-name: subTitle;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes subTitle {
+    100% {
+        opacity: 1;
+    }
+}
+.titlePart .sub_title > ul li:nth-child(1) {
+    animation-name: subTitle_li;
+    animation-delay: 0.5s;
+}
+.titlePart .sub_title > ul li:nth-child(2) {
+    animation-name: subTitle_li;
+    animation-delay: 1s;
+}
+.titlePart .sub_title > ul li:nth-child(3) {
+    animation-name: subTitle_li;
+    animation-delay: 1.5s;
+}
+.titlePart .sub_title > ul li:nth-child(4) {
+    animation-name: subTitle_li;
+    animation-delay: 2s;
+}
+@keyframes subTitle_li {
+    
+}
+.titlePart .sub_title a {
+    color: black;
+    font-style: italic;
+    text-shadow: 1px 1px 5px #fff, 7px 5px 3px #DA831F;
+}
