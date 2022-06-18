@@ -1,5 +1,5 @@
 # zhu_banner
-ㅁㄴㅇ
+데모 (https://wb96choi.github.io/zhu_banner/)
 
 아티스트의 앨범 홍보 웹사이트에서 영감을 받아 배너를 제작하였습니다.
 
