@@ -93,6 +93,13 @@ body {
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
+.main .mainImg > a:hover p,
+.main .mainImg > a:focus p,
+.main .mainImg > a:hover,
+.main .mainImg > a:focus {
+    color: black;
+    background-color: #1ed760;
+}
 @keyframes link_btn {
     100% {
         opacity: 1;
@@ -149,6 +156,9 @@ body {
     100% {
         opacity: 1;
     }
+}
+.titlePart .sub_title ul > a li:hover {
+    background-color: #DA831F;
 }
 .titlePart .sub_title > ul li:nth-child(1) {
     animation-name: subTitle_li;
