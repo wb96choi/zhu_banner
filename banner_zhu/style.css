@@ -177,7 +177,12 @@ body {
     animation-delay: 2s;
 }
 @keyframes subTitle_li {
-    
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        
+    }
 }
 .titlePart .sub_title a {
     color: black;
